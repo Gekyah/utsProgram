@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-image: url("../assets/images/1.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ini  header*/
+header{
+    display: flex;
+    justify-content:space-between;
+    /* background-color: #0000008d; */
+    color:white;
+}
+header .logo{
+    display:flex;
+    padding: 20px 150px;
+    gap:10px;
+    align-items: center;
+    letter-spacing:2px;
+}
+header .search{
+    display:flex;
+    padding: 20px 50px;
+    align-items: center;
+    gap:10px;
+}
+.search label img{
+    width: 25px;
+    height: 25px;
+}
+.search input[type=text]{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px solid white;
+    padding:5px;
+    width: 100px;
+}
+input::-webkit-input-placeholder{
+    color:rgba(255, 255, 255, 0.73);
+    letter-spacing: 2px;
+}
+
+/* ini akhir header */
+
+#container{
+    display: flex;
+    height: 90vh;
+}
+/* ini menu */
+nav{
+    /* border: 1px solid rgba(128, 128, 128, 0.363); */
+    display:flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+nav a{
+    text-decoration: none;
+}
+nav a span{
+    border-bottom: 2px solid #153045;
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: #153045;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+nav a :hover{
+    padding: 10px 20px;
+    font-weight: 600;
+    color:white;
+    background-color:#153045;
+    font-size: 20px;
+}
+nav .link{
+    display:flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap:30px;
+}
+.link a{
+    color: #153045;
+    text-decoration: none;
+    font-weight: 600;
+    padding:10px;
+}
+.link a:hover{
+    background-color: #153045;
+    color: white;
+    padding:10px;
+}
+/* ini akhir menu */
+
+/* content */
+#container .desc{
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    flex:8;
+    color: #ffffff;
+}
+.desc p{
+    font-size:30px;
+}
+.desc h1{
+    font-size: 100px;
+}
+.desc a{
+    text-decoration: none;
+    background-color: #278EA5;
+    color: #ffffff;
+    padding:15px 20px;
+    border-radius: 150px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+/* akhir content */
+
+footer{
+    display: flex;
+    justify-content:space-between;
+    background-color: rgba(0, 0, 0, 0.253);
+    color: rgb(196, 193, 193);
+    padding:10px 40px;
+}
+footer .cpright{
+    font-size:14px;
+}
+footer .medsos{
+    display: flex;
+    gap:10px;
+}
+.medsos a img{
+    width:20px;
+    height:20px
+}
